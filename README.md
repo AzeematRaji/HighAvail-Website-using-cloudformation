@@ -72,3 +72,9 @@ To tear down the deployed resources, follow these instructions:
 - Note:
 
 Ensure that the network stack is deployed first since the application stack depends on the network resources (VPC, subnets, etc.).
+
+## Website URL
+
+- CloudFrontURL: https://d1gjuuten5htu8.cloudfront.net
+
+- WebAppLBDNS: http://udagra-WebAp-mMkpfHQBWeXO-1923467063.us-east-1.elb.amazonaws.com
