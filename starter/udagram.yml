@@ -104,8 +104,11 @@ Resources:
           Fn::Base64: |
             #!/bin/bash
             apt-get update -y
-            sudo apt-get install nginx -y
-            service nginx start
+            apt-get install -y nginx
+            systemctl start nginx
+            echo "It works! Udagram, Udacity" > /var/www/html/index.html
+            systemctl restart nginx
+
         ImageId: ami-005fc0f236362e99f
         SecurityGroupIds:
           - !Ref WebServerSecGroup
